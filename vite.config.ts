@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/pestx-india/", // Replace with your repository name
+  base: "/pestx-india/", // Replace with your actual repository name
   server: {
     host: "::",
     port: 8080,
