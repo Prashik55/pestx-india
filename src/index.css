@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PestX India Design System - Dark Green + Black + White */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 150 40% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 40% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 40% 8%;
+
+    --primary: 150 60% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 15% 95%;
+    --secondary-foreground: 150 40% 15%;
+
+    --muted: 150 10% 94%;
+    --muted-foreground: 150 10% 40%;
+
+    --accent: 85 70% 45%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 150 20% 85%;
+    --input: 150 20% 85%;
+    --ring: 150 60% 20%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 150 40% 8%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 85 70% 45%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 150 30% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 150 30% 20%;
+    --sidebar-ring: 85 70% 45%;
+
+    --chart-1: 150 60% 35%;
+    --chart-2: 85 70% 45%;
+    --chart-3: 150 40% 25%;
+    --chart-4: 120 45% 40%;
+    --chart-5: 160 50% 30%;
+
+    --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+
+  .dark {
+    --background: 150 40% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 150 35% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 150 35% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 85 70% 45%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 150 30% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 150 25% 12%;
+    --muted-foreground: 150 10% 60%;
+
+    --accent: 150 60% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 25% 20%;
+    --input: 150 25% 20%;
+    --ring: 85 70% 45%;
+
+    --sidebar-background: 150 40% 6%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 85 70% 45%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 150 30% 12%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 150 25% 15%;
+    --sidebar-ring: 85 70% 45%;
+
+    --chart-1: 150 60% 45%;
+    --chart-2: 85 70% 55%;
+    --chart-3: 150 40% 35%;
+    --chart-4: 120 50% 50%;
+    --chart-5: 160 55% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .gradient-primary {
+    @apply bg-gradient-to-r from-primary to-accent;
+  }
+  
+  .gradient-dark {
+    @apply bg-gradient-to-br from-primary via-primary/90 to-accent/20;
+  }
+}
